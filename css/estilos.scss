@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    justify-self: center;
+    li {
+        margin-right: 2rem;
+     a {
+        text-decoration: none;
+        color: #23211e;
+        font-weight: bold;
+        }
+    }
+}
+
+.menu li:last-child {
+    margin-right: 0rem;
+}
+
+.nav-link :hover {
+    color: #911300
+}
+
+.section-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 99;
+    inset: 0 0 60px 0;
+    h1 {
+        color: #23211e;
+        font-weight: bolder;
+        font-size: 35px;
+        text-align: center;
+        width: 25ch;
+    }
+}
+
+.button-titulo {
+    margin-top: 1rem;
+    background-color: #84d1b2;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 16px;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.button-link :hover{
+    text-decoration: none;
+    color: white;
+}
+
+.section-info {
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+.lista-p {
+    text-transform: uppercase;
+    grid-column: 1 / 4;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    border:solid 1px #ccc;
+    transition: box-shadow 600ms;
+    cursor: pointer;
+    align-items: center;
+    :hover {
+        box-shadow: 0.4rem 0.4rem 12px 1px #b1b1b162;
+    }
+    img {
+        height:  15rem;
+    }
+}
+
+.producto p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    background-color: rgba(204, 204, 204, 0.13);
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem 0 4rem;
+}
+
+.medio-pago {
+    text-transform: uppercase;
+}
+
+.redes-sociales {
+    text-transform: uppercase;
+}
+
+.contacto-footer {
+    text-transform: uppercase;
+}
+
+.section-menu {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.div-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.logo {
+    height: 8rem;
+    justify-self: flex-start;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.carousel-control-prev {
+    z-index: 99;
+}
+
+.carousel-control-next {
+    z-index: 99;
+}
+
+.navbar {
+    align-items: start;
+}
+
+.imagen-producto img {
+    width: 100%;
+}
+
+.titulo-productos {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+    font-size: 30px;
+}
+
+.texto-contactanos {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    h1 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+.form-contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    label {
+        margin: 0.5rem;
+        color:black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.textarea-contacto {
+    resize: vertical;
+    margin: 0.4rem;
+}
+
+.titulo-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+.texto-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem 0 10rem;
+    text-align: center;
+    p {
+        margin: 0 0 0.5rem 0;
+    }
+    p:last-child {
+        font-weight: bold;
+        margin: 0 0 3rem 0;
+    }
+}
+
+.sucursales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.sucursales-info {
+    border:solid 1px #ccc;
+    width: 507px;
+    height: 574px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    margin-top: 10px;
+    margin-left: 4rem;
+}
+
+.sucursales-titulo {
+    margin: 0 0 0.5rem 0;
+    font-weight: bolder;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.sucursales-contenido {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.banner-producto img {
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .lista-productos > div {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .lista-p {
+        grid-column: 1 / 3;
+    }
+
+    .section-titulo h1 {
+        width: 100%;
+    }
+
+    .producto {
+        margin-right: 0;
+        img {
+            width: 350px;
+            object-fit: cover;
+            margin-bottom: 1rem;  
+        }
+    }
+
+    .carousel-inner {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .lista-productos > div {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .lista-p {
+        grid-column: 1 / 3;
+    }
+
+    .section-titulo h1 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .section-titulo p {
+        font-size: .8rem;
+    }
+
+    .producto {
+        margin-right: 0;
+        img {
+            width: 350px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .carousel-inner {
+        height: unset;
+    }
+    
+    .menu {
+        margin-top: 1rem;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .lista-productos > div {
+        grid-template-columns: 1fr;
+    }
+
+    .section-menu {
+        position: unset;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            margin-right: 0;
+        }
+    }
+
+    .lista-p {
+        grid-column: 1 / 2 ;
+    }
+    .producto {
+        margin-right: 0;
+        img {
+            width: 350px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .footer {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center; 
+        height: 100%;
+        h3 {
+            margin: 2rem;
+        }
+    }
+
+    .div-logo {
+        margin: 0;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .texto-nosotros {
+        padding: 1rem;
+    }
+
+    .sucursales-info {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .mapa {
+        margin-left: 0;
+        width: 100%;
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .sucursales {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .section-titulo h1{
+        font-size: 20px; 
+    }
+
+    .section-titulo p {
+        font-size: 10px;
+    }
+    
+}
