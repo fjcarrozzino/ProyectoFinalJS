@@ -25,6 +25,7 @@
   text-decoration: none;
   color: #23211e;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .menu li:last-child {
@@ -65,7 +66,7 @@
 .button-titulo {
   margin-top: 1rem;
   background-color: #84d1b2;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   border: none;
   color: white;
   font-weight: bolder;
@@ -142,15 +143,16 @@
           align-items: center;
 }
 
-.producto :hover {
-  -webkit-box-shadow: 0.4rem 0.4rem 12px 1px #b1b1b162;
-          box-shadow: 0.4rem 0.4rem 12px 1px #b1b1b162;
-}
-
 .producto img {
   height: 15rem;
   width: 430px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.producto:hover {
+  -webkit-box-shadow: 0.4rem 0.4rem 12px 1px #b1b1b162;
+          box-shadow: 0.4rem 0.4rem 12px 1px #b1b1b162;
 }
 
 .producto p {
@@ -182,12 +184,74 @@
   text-transform: uppercase;
 }
 
+.medio-pago h3 {
+  font-size: 30px;
+  padding-bottom: 0.7rem;
+}
+
+.medio-pago-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fab {
+  padding-right: 0.5rem;
+}
+
+.fas {
+  padding-right: 0.5rem;
+}
+
 .redes-sociales {
   text-transform: uppercase;
 }
 
+.redes-sociales h3 {
+  font-size: 30px;
+  padding-bottom: 0.5rem;
+}
+
 .contacto-footer {
   text-transform: uppercase;
+}
+
+.contacto-footer h3 {
+  font-size: 30px;
+  padding-bottom: 0.5rem;
+}
+
+.contacto-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
+.redes-icon a {
+  color: black;
+}
+
+.numero-contactanos {
+  font-size: 1.7rem;
 }
 
 .section-menu {
@@ -243,7 +307,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 0 2rem 0;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .texto-contactanos {
@@ -261,6 +325,10 @@
   font-weight: bolder;
 }
 
+.form-contacto {
+  background-color: #b4b6bba1;
+}
+
 .form-contacto form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,19 +340,98 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2rem;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 .form-contacto form label {
-  margin: 0.5rem;
+  margin: 2rem 0 0.3rem 0;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.cuadro-form {
+  width: 20rem;
+  height: 2.5rem;
+  padding-left: 8px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.mensaje {
+  padding-left: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-seccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.contenedor-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px #ccc;
+  border-radius: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.envelope {
+  text-align: center;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.envelope img {
+  height: 350px;
+  margin-bottom: 2rem;
+}
+
+.envelope-titulo {
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+.envelope-parrafo {
+  font-size: 20px;
+  line-height: 2.3rem;
+}
+
+.button-contacto {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 8.8rem;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  background-color: #339af0;
+  border-style: none;
+}
+
 .textarea-contacto {
-  resize: vertical;
-  margin: 0.4rem;
+  resize: none;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 .titulo-nosotros {
@@ -303,6 +450,7 @@
 
 .titulo-nosotros h1 {
   margin-bottom: 2rem;
+  font-size: 40px;
 }
 
 .texto-nosotros {
@@ -321,7 +469,7 @@
 }
 
 .texto-nosotros p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.9rem 0;
 }
 
 .texto-nosotros p:last-child {
@@ -419,6 +567,30 @@
   .carousel-inner {
     height: unset;
   }
+  .sucursales {
+    padding: 1.5rem;
+  }
+  .footer {
+    padding: 2rem;
+  }
+  .texto-nosotros {
+    margin-top: 2.5rem;
+  }
+  .titulo-nosotros {
+    margin-top: 5rem;
+  }
+  .medio-pago h3 {
+    font-size: 22px;
+  }
+  .contacto-footer h3 {
+    font-size: 22px;
+  }
+  .redes-sociales h3 {
+    font-size: 22px;
+  }
+  .numero-contactanos {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 810px) {
@@ -450,11 +622,328 @@
   .carousel-inner {
     height: unset;
   }
-  .menu {
-    margin-top: 1rem;
+  .menu li a {
+    font-size: 1rem;
   }
   .logo {
     height: 100px;
+  }
+  .footer {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 750px;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 1rem;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 380px;
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 500px;
+  }
+  .medio-pago h3 {
+    font-size: 18px;
+  }
+  .contacto-footer h3 {
+    font-size: 18px;
+  }
+  .redes-sociales h3 {
+    font-size: 18px;
+  }
+  .numero-contactanos {
+    font-size: 19px;
+    font-weight: bolder;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 1rem;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 310px;
+    height: 510px;
+  }
+  .menu li a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .lista-productos > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-menu {
+    position: unset;
+  }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .lista-p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .producto {
+    margin-right: 0;
+  }
+  .producto img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .div-logo {
+    margin: 0;
+  }
+  .logo {
+    height: 70px;
+  }
+  .texto-nosotros {
+    padding: 1rem;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .button-titulo {
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .section-titulo h1 {
+    font-size: 16px;
+  }
+  .section-titulo p {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .lista-productos > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-menu {
+    position: unset;
+  }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .lista-p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .producto {
+    margin-right: 0;
+  }
+  .producto img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .fa-credit-card {
+    font-size: 1.33em !important;
+  }
+  .fa-cc-visa {
+    font-size: 1.33em !important;
+  }
+  .fa-cc-mastercard {
+    font-size: 1.33em !important;
+  }
+  .fa-cc-amex {
+    font-size: 1.33em !important;
+  }
+  .fa-whatsapp {
+    font-size: 1.33em !important;
+  }
+  .fa-instagram {
+    font-size: 1.33em !important;
+  }
+  .fa-twitter {
+    font-size: 1.33em !important;
+  }
+  .fa-facebook {
+    font-size: 1.33em !important;
+  }
+  .medio-pago h3 {
+    font-size: 15px;
+  }
+  .contacto-footer h3 {
+    font-size: 15px;
+  }
+  .redes-sociales h3 {
+    font-size: 15px;
+  }
+  .div-logo {
+    margin: 0;
+  }
+  .logo {
+    height: 70px;
+  }
+  .texto-nosotros {
+    padding: 1rem;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .button-titulo {
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .section-titulo h1 {
+    font-size: 16px;
+  }
+  .section-titulo p {
+    font-size: 10px;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+  .textarea-contacto {
+    max-width: 160%;
+  }
+  .navbar-toggler {
+    margin-right: 0.6rem;
   }
 }
 
@@ -492,17 +981,13 @@
   }
   .footer {
     padding: 1rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
   }
   .footer h3 {
-    margin: 2rem;
+    margin: 1rem;
   }
   .div-logo {
     margin: 0;
@@ -531,11 +1016,478 @@
             flex-direction: column;
     padding: 1rem;
   }
+  .button-titulo {
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+  }
   .section-titulo h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .section-titulo p {
     font-size: 10px;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+  .medio-pago h3 {
+    font-size: 15px;
+  }
+  .contacto-footer h3 {
+    font-size: 14px;
+  }
+  .redes-sociales h3 {
+    font-size: 14px;
+  }
+  .numero-contactanos {
+    font-size: 14px;
+  }
+  .textarea-contacto {
+    max-width: 160%;
+  }
+  .navbar-toggler {
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .lista-productos > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-menu {
+    position: unset;
+  }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .lista-p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .producto {
+    margin-right: 0;
+  }
+  .producto img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .div-logo {
+    margin: 0;
+  }
+  .logo {
+    height: 70px;
+  }
+  .texto-nosotros {
+    padding: 1rem;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .button-titulo {
+    padding: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .section-titulo h1 {
+    font-size: 16px;
+  }
+  .section-titulo p {
+    font-size: 10px;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+  .medio-pago h3 {
+    font-size: 12px;
+  }
+  .contacto-footer h3 {
+    font-size: 12px;
+  }
+  .redes-sociales h3 {
+    font-size: 12px;
+  }
+  .numero-contactanos {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .fa-credit-card {
+    font-size: 1em !important;
+  }
+  .fa-cc-visa {
+    font-size: 1em !important;
+  }
+  .fa-cc-mastercard {
+    font-size: 1em !important;
+  }
+  .fa-cc-amex {
+    font-size: 1em !important;
+  }
+  .fa-whatsapp {
+    font-size: 1em !important;
+  }
+  .fa-instagram {
+    font-size: 1em !important;
+  }
+  .fa-twitter {
+    font-size: 1em !important;
+  }
+  .fa-facebook {
+    font-size: 1em !important;
+  }
+  .button-titulo span {
+    display: none;
+  }
+  .textarea-contacto {
+    max-width: 160%;
+  }
+  .navbar-toggler {
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lista-productos > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-menu {
+    position: unset;
+  }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .lista-p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .producto {
+    margin-right: 0;
+  }
+  .producto img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .div-logo {
+    margin: 0;
+  }
+  .logo {
+    height: 70px;
+  }
+  .texto-nosotros {
+    padding: 1rem;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .button-titulo {
+    padding: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+  }
+  .button-link {
+    font-size: 12px;
+  }
+  .section-titulo h1 {
+    font-size: 13px;
+  }
+  .section-titulo p {
+    font-size: 10px;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+  .medio-pago h3 {
+    font-size: 10px;
+  }
+  .contacto-footer h3 {
+    font-size: 10px;
+  }
+  .redes-sociales h3 {
+    font-size: 10px;
+  }
+  .numero-contactanos {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  .fa-credit-card {
+    font-size: 1em !important;
+  }
+  .fa-cc-visa {
+    font-size: 1em !important;
+  }
+  .fa-cc-mastercard {
+    font-size: 1em !important;
+  }
+  .fa-cc-amex {
+    font-size: 1em !important;
+  }
+  .fa-whatsapp {
+    font-size: 1em !important;
+  }
+  .fa-instagram {
+    font-size: 1em !important;
+  }
+  .fa-twitter {
+    font-size: 1em !important;
+  }
+  .fa-facebook {
+    font-size: 1em !important;
+  }
+  .button-titulo span {
+    display: none;
+  }
+  .textarea-contacto {
+    max-width: 160%;
+  }
+  .navbar-toggler {
+    margin-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .lista-productos > div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-menu {
+    position: unset;
+  }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu li {
+    margin-right: 0;
+  }
+  .lista-p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .producto {
+    margin-right: 0;
+  }
+  .producto img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .footer h3 {
+    margin: 1rem;
+  }
+  .div-logo {
+    margin: 0;
+  }
+  .logo {
+    height: 70px;
+  }
+  .texto-nosotros {
+    padding: 1rem;
+  }
+  .sucursales-info {
+    width: 100%;
+    height: auto;
+  }
+  .mapa {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .button-titulo {
+    padding: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+  }
+  .section-titulo h1 {
+    font-size: 13px;
+  }
+  .section-titulo p {
+    font-size: 10px;
+  }
+  .envelope img {
+    height: 200px;
+  }
+  .contenedor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    width: 360px;
+  }
+  .medio-pago h3 {
+    font-size: 8px;
+  }
+  .contacto-footer h3 {
+    font-size: 8px;
+  }
+  .redes-sociales h3 {
+    font-size: 8px;
+  }
+  .numero-contactanos {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  .fa-credit-card {
+    font-size: 1em !important;
+  }
+  .fa-cc-visa {
+    font-size: 1em !important;
+  }
+  .fa-cc-mastercard {
+    font-size: 1em !important;
+  }
+  .fa-cc-amex {
+    font-size: 1em !important;
+  }
+  .fa-whatsapp {
+    font-size: 1em !important;
+  }
+  .fa-instagram {
+    font-size: 1em !important;
+  }
+  .fa-twitter {
+    font-size: 1em !important;
+  }
+  .fa-facebook {
+    font-size: 1em !important;
+  }
+  .button-titulo span {
+    display: none;
+  }
+  .button-link {
+    font-size: 12px;
+  }
+  .textarea-contacto {
+    max-width: 160%;
+  }
+  .navbar-toggler {
+    margin-right: 0.6rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
