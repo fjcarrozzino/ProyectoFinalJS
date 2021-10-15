@@ -140,7 +140,7 @@ function displayCart() {
             tortasContainer.innerHTML += `
             <div class="producto-cart">
             <ion-icon class="remove" name="close-circle-outline"></ion-icon>
-            <img src="/imagenes/${item.nametag}.jpg">
+            <img src="../imagenes/${item.nametag}.jpg">
             <span>${item.name}</span>
             </div>
             <div class="precio">$${item.precio}</div>
