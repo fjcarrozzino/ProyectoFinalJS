@@ -80,6 +80,138 @@
   color: white;
 }
 
+.button-productos {
+  margin: 0.5rem 0 0.5rem 0;
+  background-color: #84d1b2;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carrito-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.button-carrito {
+  background-color: #84d1b2;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.button-carrito a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.tortas-container {
+  max-width: 1000px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-weight: bold;
+}
+
+.tortas-container ion-icon {
+  font-size: 30px;
+  color: #2f976e;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.tortas-header {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid lightgrey;
+  margin: 0 auto;
+}
+
+.tortas-titulo {
+  width: 45%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.precio {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.total {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.cantidad {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.productos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productos img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.producto-cart {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
 .button-link :hover {
   text-decoration: none;
   color: white;
@@ -137,7 +269,6 @@
   transition: -webkit-box-shadow 600ms;
   transition: box-shadow 600ms;
   transition: box-shadow 600ms, -webkit-box-shadow 600ms;
-  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -362,8 +493,8 @@
   padding-left: 8px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.cuadro-form::-webkit-outer-spin-button,
+.cuadro-form::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -540,6 +671,232 @@ input[type=number] {
 
 .banner-producto img {
   width: 100%;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.cart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.cart-total-title {
+  width: 30%;
+}
+
+.total-numero {
+  width: 10%;
+  font-size: 23px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 50px auto;
+  font-size: 1.75em;
+  background-color: #84d1b2;
+  border-radius: .3em;
+  border: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.agregar-tortas {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #84d1b2;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #79bea3;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.button-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button-cart a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-remove {
+  color: white;
+  background-color: #ffffff;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-remove:hover {
+  background-color: #ffffff;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.shop-item-detalles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+@-moz-document url-prefix() {
+  .textarea-contacto {
+    width: 320px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
